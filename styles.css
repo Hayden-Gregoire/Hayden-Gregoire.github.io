@@ -69,3 +69,25 @@ h2 {
    font-weight: bold; /* Bold text for emphasis */
    color: rgb(80, 5, 20); /* Slightly darker color for contrast */
 }
+
+/* Mission Statement styling */
+.mission {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   max-width: 80%;
+   margin: 20px auto;
+   color: rgb(135, 10, 35);
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mission h2 {
+   margin-top: 0;
+   color: rgb(135, 10, 35); /* Ensures header color matches */
+}
+
+.mission p {
+   font-size: 1.1em;
+   line-height: 1.5;
+}
