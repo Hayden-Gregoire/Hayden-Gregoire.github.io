@@ -70,6 +70,35 @@ h2 {
    color: rgb(80, 5, 20); /* Slightly darker color for contrast */
 }
 
+/* About Me styling (matches Mission Statement) */
+.about {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px; /* Rounded corners */
+   max-width: 80%; /* Limit width */
+   margin: 20px auto; /* Center the box */
+   color: rgb(135, 10, 35); /* Same text color as Mission Statement */
+   text-align: center; /* Center text */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.about p {
+   font-size: 1.1em; /* Increase font size for readability */
+   line-height: 1.5; /* Improve line spacing */
+}
+
+.profile-picture {
+   width: 150px; /* Adjust the size of the image */
+   height: 150px; /* Make it square */
+   border-radius: 50%; /* Make it circular */
+   object-fit: cover; /* Ensure the image fits within the circle */
+   margin-bottom: 15px; /* Add spacing below the image */
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a polished look */
+   display: block; /* Center-align the image */
+   margin-left: auto; 
+   margin-right: auto;
+}
+
 /* Mission Statement styling */
 .mission {
    background-color: white;
@@ -90,4 +119,36 @@ h2 {
 .mission p {
    font-size: 1.1em;
    line-height: 1.5;
+}
+
+/* Resume Section styling */
+.resume {
+   background-color: white; /* Match other sections' background */
+   padding: 20px;
+   border-radius: 10px; /* Rounded corners for consistency */
+   max-width: 80%;
+   margin: 20px auto;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+.resume p {
+   font-size: 1em; /* Readable text size */
+   color: rgb(135, 10, 35); /* Text color */
+   margin-bottom: 15px; /* Space between paragraph and button */
+}
+
+.button {
+   display: inline-block;
+   padding: 10px 20px;
+   color: white;
+   background-color: rgb(135, 10, 35); /* Resume button matches the theme */
+   text-decoration: none; /* Remove underline from link */
+   border-radius: 5px; /* Rounded corners */
+   font-weight: bold; /* Bold text */
+   transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.button:hover {
+   background-color: rgb(80, 5, 20); /* Darker hover color */
 }
