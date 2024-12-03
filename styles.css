@@ -1,106 +1,26 @@
+/* General Page Styling */
 body {
    background-color: rgb(14, 172, 196);
    font-family: 'Times New Roman', Times, serif;
+   margin: 0;
+   padding: 0;
 }
 
 h1 {
    text-align: center;
    color: ivory;
    font-size: 40px;
+   margin-top: 20px;
 }
 
 h2 {
    color: ivory;
-}
-
-.projects {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-around; /* Spread out projects */
-}
-
-.project {
-   width: 25%; /* Adjusted width for each project */
-   margin: 10px;
-   padding: 20px 10px;
-   background: white;
-   border-radius: 25%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
    text-align: center;
+   margin-bottom: 10px;
 }
 
-.project a {
-   text-decoration: none; /* Remove underline from links */
-   color: rgb(135, 10, 35); /* Link color */
-   margin: 10px 0; /* Add space around links */
-}
-
-.project p {
-   font-size: 0.9em; /* Adjust text size */
-   line-height: 1.4; /* Line height for readability */
-   text-align: center; /* Center text */
-   padding: 0 15px; /* Padding around text */
-   color: rgb(135, 10, 35); /* Text color */
-   max-width: 90%; /* Max width to prevent overflow */
-   margin: 0 auto; /* Center paragraph */
-}
-
-/* Ensures images are square and responsive */
-.oval-image {
-   max-width: 90%; /* Reduce max width for better fit */
-   height: auto; /* Maintain aspect ratio */
-   border-radius: 10px; /* Rounding edges */
-   object-fit: contain; /* Ensure entire image fits in the container */
-   display: block; /* Treat image as block element */
-   margin: 0 auto; /* Center image */
-   padding: 10px; /* Add padding around image */
-}
-
-/* Styling for Prototype Sketches Section */
-.project.sketches {
-   background-color: lightgray; /* Different background for the prototype sketches section */
-   border: 2px solid rgb(135, 10, 35); /* Add a border for emphasis */
-   border-radius: 10px; /* Rounded corners for a distinct look */
-}
-
-.project.sketches p {
-   font-weight: bold; /* Bold text for emphasis */
-   color: rgb(80, 5, 20); /* Slightly darker color for contrast */
-}
-
-/* About Me styling (matches Mission Statement) */
+/* About Me Section Styling */
 .about {
-   background-color: white;
-   padding: 20px;
-   border-radius: 10px; /* Rounded corners */
-   max-width: 80%; /* Limit width */
-   margin: 20px auto; /* Center the box */
-   color: rgb(135, 10, 35); /* Same text color as Mission Statement */
-   text-align: center; /* Center text */
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-.about p {
-   font-size: 1.1em; /* Increase font size for readability */
-   line-height: 1.5; /* Improve line spacing */
-}
-
-.profile-picture {
-   width: 150px; /* Adjust the size of the image */
-   height: 150px; /* Make it square */
-   border-radius: 50%; /* Make it circular */
-   object-fit: cover; /* Ensure the image fits within the circle */
-   margin-bottom: 15px; /* Add spacing below the image */
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for a polished look */
-   display: block; /* Center-align the image */
-   margin-left: auto; 
-   margin-right: auto;
-}
-
-/* Mission Statement styling */
-.mission {
    background-color: white;
    padding: 20px;
    border-radius: 10px;
@@ -111,44 +31,126 @@ h2 {
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.mission h2 {
-   margin-top: 0;
-   color: rgb(135, 10, 35); /* Ensures header color matches */
+.profile-picture {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   margin: 0 auto 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.mission p {
+/* Skills Section Styling */
+.skills {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   max-width: 80%;
+   margin: 20px auto;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   color: rgb(135, 10, 35);
+}
+
+/* Projects Section Styling */
+.projects {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 20px;
+   padding: 10px;
+}
+
+.project {
+   width: 300px;
+   margin: 10px;
+   padding: 20px;
+   background: white;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project a {
+   text-decoration: none;
+   color: rgb(135, 10, 35);
+   margin: 10px 0;
+}
+
+.project p {
+   font-size: 0.9em;
+   line-height: 1.4;
+   color: rgb(135, 10, 35);
+}
+
+.oval-image {
+   max-width: 90%;
+   border-radius: 10px;
+   object-fit: contain;
+   margin: 10px 0;
+}
+
+/* Special Styling for Prototype Sketches */
+.project.sketches {
+   background-color: white; /* Set background to white */
+   border: 2px solid rgb(135, 10, 35);
+   border-radius: 10px;
+}
+
+/* Mission, Repository, and Resume Section Styling */
+.mission, .resume, .repository {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   max-width: 80%;
+   margin: 20px auto;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   color: rgb(135, 10, 35);
+}
+
+.mission h2, .resume h2, .repository h2 {
+   margin-top: 0;
+   color: rgb(135, 10, 35);
+}
+
+.mission p, .resume p, .repository p {
    font-size: 1.1em;
    line-height: 1.5;
 }
 
-/* Resume Section styling */
-.resume {
-   background-color: white; /* Match other sections' background */
-   padding: 20px;
-   border-radius: 10px; /* Rounded corners for consistency */
-   max-width: 80%;
-   margin: 20px auto;
-   text-align: center;
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
-}
-
-.resume p {
-   font-size: 1em; /* Readable text size */
-   color: rgb(135, 10, 35); /* Text color */
-   margin-bottom: 15px; /* Space between paragraph and button */
-}
-
+/* Resume Button */
 .button {
    display: inline-block;
    padding: 10px 20px;
    color: white;
-   background-color: rgb(135, 10, 35); /* Resume button matches the theme */
-   text-decoration: none; /* Remove underline from link */
-   border-radius: 5px; /* Rounded corners */
-   font-weight: bold; /* Bold text */
-   transition: background-color 0.3s ease; /* Smooth hover transition */
+   background-color: rgb(135, 10, 35);
+   text-decoration: none;
+   border-radius: 5px;
+   font-weight: bold;
+   transition: background-color 0.3s ease;
 }
 
 .button:hover {
-   background-color: rgb(80, 5, 20); /* Darker hover color */
+   background-color: rgb(80, 5, 20);
+}
+
+/* Contact Section */
+.contact {
+   text-align: center;
+   color: ivory;
+   font-size: 1.1em;
+   margin-bottom: 20px;
+}
+
+.contact a {
+   color: rgb(255, 235, 205);
+   text-decoration: none;
+}
+
+.contact a:hover {
+   text-decoration: underline;
 }
