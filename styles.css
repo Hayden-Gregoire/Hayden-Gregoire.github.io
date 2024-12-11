@@ -31,6 +31,11 @@ h2 {
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.about p {
+   font-size: 1.1em;
+   line-height: 1.5;
+}
+
 .profile-picture {
    width: 150px;
    height: 150px;
@@ -62,7 +67,7 @@ h2 {
 }
 
 .project {
-   width: 300px;
+   width: 300px; /* Fixed width for consistency */
    margin: 10px;
    padding: 20px;
    background: white;
@@ -83,6 +88,7 @@ h2 {
 .project p {
    font-size: 0.9em;
    line-height: 1.4;
+   padding: 0 10px;
    color: rgb(135, 10, 35);
 }
 
@@ -95,13 +101,18 @@ h2 {
 
 /* Special Styling for Prototype Sketches */
 .project.sketches {
-   background-color: white; /* Set background to white */
+   background-color: white;
    border: 2px solid rgb(135, 10, 35);
    border-radius: 10px;
 }
 
-/* Mission, Repository, and Resume Section Styling */
-.mission, .resume, .repository {
+.project.sketches p {
+   font-weight: bold;
+   color: rgb(80, 5, 20);
+}
+
+/* Mission Statement Section */
+.mission {
    background-color: white;
    padding: 20px;
    border-radius: 10px;
@@ -112,17 +123,33 @@ h2 {
    color: rgb(135, 10, 35);
 }
 
-.mission h2, .resume h2, .repository h2 {
+.mission h2 {
    margin-top: 0;
    color: rgb(135, 10, 35);
 }
 
-.mission p, .resume p, .repository p {
+.mission p {
    font-size: 1.1em;
    line-height: 1.5;
 }
 
-/* Resume Button */
+/* Resume Section Styling */
+.resume {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   max-width: 80%;
+   margin: 20px auto;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.resume p {
+   font-size: 1em;
+   color: rgb(135, 10, 35);
+   margin-bottom: 15px;
+}
+
 .button {
    display: inline-block;
    padding: 10px 20px;
@@ -153,4 +180,29 @@ h2 {
 
 .contact a:hover {
    text-decoration: underline;
+}
+
+/* Repository Section Styling */
+.repository {
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   max-width: 80%;
+   margin: 20px auto;
+   text-align: center;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   color: rgb(135, 10, 35);
+}
+
+.repository p {
+   font-size: 1.1em;
+   margin: 15px 0;
+}
+
+.repository-image {
+   max-width: 90%;
+   border-radius: 10px;
+   object-fit: contain;
+   margin-bottom: 15px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
